@@ -1,0 +1,9 @@
+{
+	"name": "Imput_Alimentacion",
+	"plugin-id": "TextBox",
+	"sid": 657079517433016,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

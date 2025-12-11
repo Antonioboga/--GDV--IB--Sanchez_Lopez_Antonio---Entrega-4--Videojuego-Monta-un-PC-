@@ -1,0 +1,9 @@
+{
+	"name": "Imput_ram",
+	"plugin-id": "TextBox",
+	"sid": 826505994143185,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

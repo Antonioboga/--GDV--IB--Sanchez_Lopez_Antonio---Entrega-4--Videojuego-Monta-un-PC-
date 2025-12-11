@@ -1,0 +1,56 @@
+{
+	"name": "Hoja de eventos 1",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón",
+					"sid": 816712193821780
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 357774562683774,
+					"parameters": {
+						"layout": "\"Juego\""
+					}
+				}
+			],
+			"sid": 917222143597489
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Botón2",
+					"sid": 963738817529186
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 145036312204439,
+					"parameters": {
+						"layout": "\"Juego\""
+					}
+				},
+				{
+					"id": "reset-eventvar",
+					"objectClass": "System",
+					"sid": 554723920243914,
+					"parameters": {
+						"variable": "Puntos"
+					}
+				}
+			],
+			"sid": 863314530698886
+		}
+	],
+	"sid": 157429432939680
+}

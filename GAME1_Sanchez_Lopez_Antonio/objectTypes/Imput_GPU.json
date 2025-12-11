@@ -1,0 +1,9 @@
+{
+	"name": "Imput_GPU",
+	"plugin-id": "TextBox",
+	"sid": 603371863862626,
+	"isGlobal": false,
+	"editorNewInstanceIsReplica": true,
+	"instanceVariables": [],
+	"behaviorTypes": []
+}

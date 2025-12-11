@@ -1,0 +1,804 @@
+{
+	"name": "Hoja de eventos 2",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "Puntos",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 152115365528274
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Imput_ram",
+					"sid": 159619895734000,
+					"parameters": {
+						"text": "\"RAM\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite7",
+					"sid": 646872644194482,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "Imput_ram",
+					"sid": 121242759716656,
+					"parameters": {
+						"text": "\" \""
+					}
+				}
+			],
+			"sid": 823105119685388
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Imput_CPU",
+					"sid": 873834474159081,
+					"parameters": {
+						"text": "\"CPU\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite2",
+					"sid": 987084216682594,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "Imput_CPU",
+					"sid": 214574316995528,
+					"parameters": {
+						"text": "\" \""
+					}
+				}
+			],
+			"sid": 611456347159878
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Imput_Disipador",
+					"sid": 384210400585482,
+					"parameters": {
+						"text": "\"DISIPADOR\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite3",
+					"sid": 189281595490870,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "Imput_Disipador",
+					"sid": 974153502434999,
+					"parameters": {
+						"text": "\" \""
+					}
+				}
+			],
+			"sid": 459540320487043
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Imput_GPU",
+					"sid": 840627675183752,
+					"parameters": {
+						"text": "\"GPU\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite4",
+					"sid": 357150000455581,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "Imput_GPU",
+					"sid": 990538662847319,
+					"parameters": {
+						"text": "\" \""
+					}
+				}
+			],
+			"sid": 355637715769314
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Imput_placa",
+					"sid": 192682176333302,
+					"parameters": {
+						"text": "\"PLACA BASE\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite5",
+					"sid": 981852566496408,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "Imput_placa",
+					"sid": 792098363796080,
+					"parameters": {
+						"text": "\" \""
+					}
+				}
+			],
+			"sid": 862174864424819
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-text",
+					"objectClass": "Imput_Alimentacion",
+					"sid": 448792160515255,
+					"parameters": {
+						"text": "\"FUENTE DE ALIMENTACION\"",
+						"case": "case-insensitive"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-enabled",
+					"objectClass": "Sprite6",
+					"sid": 611985780645886,
+					"behaviorType": "ArrastrarYSoltar",
+					"parameters": {
+						"state": "enabled"
+					}
+				},
+				{
+					"id": "append-text",
+					"objectClass": "Imput_Alimentacion",
+					"sid": 902855009756421,
+					"parameters": {
+						"text": "\" \""
+					}
+				}
+			],
+			"sid": 839120790262751
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Sprite5",
+					"sid": 919809865936817,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 335824544329590,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite5",
+							"sid": 165022363252955,
+							"parameters": {
+								"object": "Slot_Placa_Base"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Sprite5",
+							"sid": 484143792955534,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "Slot_Placa_Base",
+								"image-point": "0",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 854425910782129,
+							"parameters": {
+								"variable": "Puntos",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Texto_Puntos",
+							"sid": 439124020084308,
+							"parameters": {
+								"text": "Puntos"
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Sprite5",
+							"sid": 186415238250858,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 323234766174711
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 529258401405692
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite5",
+							"sid": 517710667292158,
+							"parameters": {
+								"x": "459",
+								"y": "309"
+							}
+						}
+					],
+					"sid": 932444018355066
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Sprite2",
+					"sid": 855668717049351,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 632710860068005,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite2",
+							"sid": 262293189542022,
+							"parameters": {
+								"object": "Slot_CPU"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 894203962797484,
+							"parameters": {
+								"variable": "Puntos",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Texto_Puntos",
+							"sid": 338394010027964,
+							"parameters": {
+								"text": "Puntos"
+							}
+						},
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Sprite2",
+							"sid": 747288466375670,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "Slot_CPU",
+								"image-point": "0",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Sprite2",
+							"sid": 507217291596079,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 394015113145184
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 113964871185168
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite2",
+							"sid": 480665826638497,
+							"parameters": {
+								"x": "85",
+								"y": "436"
+							}
+						}
+					],
+					"sid": 580899808938410
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Sprite3",
+					"sid": 249023767567386,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 499015465824376,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite3",
+							"sid": 448920888859548,
+							"parameters": {
+								"object": "Slot_Disipador"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 607177003123867,
+							"parameters": {
+								"variable": "Puntos",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Texto_Puntos",
+							"sid": 221465112793927,
+							"parameters": {
+								"text": "Puntos"
+							}
+						},
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Sprite3",
+							"sid": 526244838965032,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "Slot_Disipador",
+								"image-point": "0",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Sprite3",
+							"sid": 444173629412837,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 285024513310105
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 721031208943280
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite3",
+							"sid": 237046712943170,
+							"parameters": {
+								"x": "92",
+								"y": "222"
+							}
+						}
+					],
+					"sid": 266747343156672
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Sprite4",
+					"sid": 141782264722029,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 891424727156955,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite4",
+							"sid": 846067878676218,
+							"parameters": {
+								"object": "Slot_GPU"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 399088334541786,
+							"parameters": {
+								"variable": "Puntos",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Texto_Puntos",
+							"sid": 880587862451828,
+							"parameters": {
+								"text": "Puntos"
+							}
+						},
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Sprite4",
+							"sid": 185933995889849,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "Slot_GPU",
+								"image-point": "0",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Sprite4",
+							"sid": 685178081841354,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 159436944758435
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 469420187189386
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite4",
+							"sid": 855136152141160,
+							"parameters": {
+								"x": "442",
+								"y": "598"
+							}
+						}
+					],
+					"sid": 281093580903287
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Sprite6",
+					"sid": 502920573943903,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 379021747196741,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite6",
+							"sid": 636202330727584,
+							"parameters": {
+								"object": "Slot_Fuente_Alimentacon"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 497388154380665,
+							"parameters": {
+								"variable": "Puntos",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Texto_Puntos",
+							"sid": 171687342717398,
+							"parameters": {
+								"text": "Puntos"
+							}
+						},
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Sprite6",
+							"sid": 313635694349290,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "Slot_Fuente_Alimentacon",
+								"image-point": "0",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Sprite6",
+							"sid": 366580386175938,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 993018126231436
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 536614157441079
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite6",
+							"sid": 386960023175506,
+							"parameters": {
+								"x": "146",
+								"y": "575"
+							}
+						}
+					],
+					"sid": 613664145721672
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-drop",
+					"objectClass": "Sprite7",
+					"sid": 705041039586180,
+					"behaviorType": "ArrastrarYSoltar"
+				}
+			],
+			"actions": [],
+			"sid": 612165675183772,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-overlapping-another-object",
+							"objectClass": "Sprite7",
+							"sid": 174470415527749,
+							"parameters": {
+								"object": "Solt_Ram"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 619335088634611,
+							"parameters": {
+								"variable": "Puntos",
+								"value": "1"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Texto_Puntos",
+							"sid": 726184793300960,
+							"parameters": {
+								"text": "Puntos"
+							}
+						},
+						{
+							"id": "pin-to-object-imagepoint",
+							"objectClass": "Sprite7",
+							"sid": 275977890120152,
+							"behaviorType": "Pegado",
+							"parameters": {
+								"pin-to": "Solt_Ram",
+								"image-point": "0",
+								"angle": true,
+								"width-type": "no",
+								"height-type": "no",
+								"z": false
+							}
+						},
+						{
+							"id": "set-enabled",
+							"objectClass": "Sprite7",
+							"sid": 720611614227414,
+							"behaviorType": "ArrastrarYSoltar",
+							"parameters": {
+								"state": "disabled"
+							}
+						}
+					],
+					"sid": 692303277807471
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 942475236108913
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Sprite7",
+							"sid": 534194083657734,
+							"parameters": {
+								"x": "235",
+								"y": "229"
+							}
+						}
+					],
+					"sid": 931259951694392
+				}
+			]
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 593611022382764,
+					"parameters": {
+						"variable": "Puntos",
+						"comparison": 0,
+						"value": "6"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout-by-name",
+					"objectClass": "System",
+					"sid": 135225915742056,
+					"parameters": {
+						"layout": "\"FIN\""
+					}
+				}
+			],
+			"sid": 384674570062330
+		}
+	],
+	"sid": 651772870098129
+}
